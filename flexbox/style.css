@@ -1,0 +1,26 @@
+.contenedor{
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.item{
+    width: 100px;
+    height: 200px;
+}
+.item1{
+  
+    background-color: antiquewhite;
+}
+.item2{
+    
+    background-color: aqua;
+}
+.item3{
+ 
+    background-color: black;
+}
+.item4{
+   
+    background-color: brown;
+}

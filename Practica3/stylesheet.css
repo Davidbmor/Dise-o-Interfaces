@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/*Reset CSS*/
+
+*{
+    box-sizing: border-box;
+    
+}
+
+/*-----------Resolver el problema de los heights heredados en los elementos flexibles-----------*/
+
+html, body{
+    height: 100%;
+    height: 100%;
+    margin: 0;
+    font-family:'jost';
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    border: 1px solid #ccc;
+}
+
+.navcollapse{
+    display: none;
+
+}
+
+.flexcontainer{ 
+    display: flex;
+    flex-flow: row nowrap;
+    /*--centrar los elementos--*/
+    justify-content: center;
+    align-items: center;
+    /*---same size as its fathers---*/
+    height: 100%;
+    width: 100%;
+    border: 1px solid #ccc;
+
+}
+
+.item1,.item3{
+    flex: 1;
+    border: 1px solid #078f00;
+    position: relative;
+    height: 100%;
+}	
+
+.item2{
+    display: flex;
+    flex: 20;
+    height: 100%;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+nav, .slider, .item2footer {
+    width: 100%;
+    border:1px solid #44caff;
+}
+
+
+.slider{
+    flex: 10;
+}
+
+.item2footer{
+    flex: 1;
+}
+
+/*-----------------------NAV-----------------------*/
+
+.logo{
+    flex:1;
+    height: 100%;
+    border: 1px solid #ff0000;
+}
+
+.nav{
+    flex: 8;
+    border: 1px solid #ff0000;
+}
+nav{
+    flex:1;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu_on{
+
+    height: 100%;
+    list-style-type: none;
+
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.imglogo{
+    background-image: url(/assets/img/logo.png);
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#menu_on li a{
+    font-family: "Ubuntu";
+    text-transform: uppercase;
+    color: #2b2e2c;
+    text-decoration: none;
+    font-size:  1.2rm;
+    
+}
+
+#menu_on li{
+    margin-left:  2rem;
+}
+
+#menu_on li a:hover{
+color: rgb(34, 34, 206);}
+
+
+/* -----------------------SLIDER------------------------ */
+
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(assets/img/pexels-gochrisgoxyz-1477166.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.legend{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.little{
+    font-size:1.4rem 
+}
+.great{
+    font-size: 4rem;
+}
+
+.medium{
+    font-size: 2rem;
+}
+
+
+/* ------------------------------------Both sides ------------------------------ */
+
+
+.earleft{
+    background-color:  rgba(181, 181, 181, 1);
+    width: 40px;
+    height: 220px;
+
+    position: absolute ;
+    right: 0;
+    top:calc((100%/2) - 110px);
+}
+.earright{
+
+    background-color:  rgba(181, 181, 181, 1);
+    width: 40px;
+    height: 220px;
+
+    position: absolute ;
+    left: 0;
+    top:calc((100%/2) - 110px);
+}
+
+.move{
+    height: 40px;
+    width: 220px;
+    transform: rotate(-90deg) translateX(-90%) translateY(-200%);
+}

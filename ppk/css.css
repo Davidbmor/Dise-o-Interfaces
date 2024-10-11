@@ -1,0 +1,145 @@
+body {
+    
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+header {
+    background-color: #191b19;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.contenedor {
+    height: 500px; 
+    margin-top: 20px;
+    position: relative;
+}
+
+.rectangulo-pequeño {
+    background-color: #FF6347;
+    width: 23%;
+    height: 100%;
+    float: left;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.rectangulo-grande {
+    background-color: #4682B4;
+    width: 74%;
+    height: 100%; 
+    float: left;
+}
+
+.contenedor2 {
+    height: 500px; 
+    margin-top: 20px;
+    position: relative;
+}
+
+.cuadrado1 {
+    background-color: #FF6347;
+    width: 49%;
+    height: 100%;
+    float: left;
+    margin-left: 20px;
+    margin-right: 0; 
+}
+
+.cuadrado2 {
+    background-color: #fffc47;
+    width: 49%;
+    height: 100%;
+    float: left; 
+    margin-right: 0; 
+}
+
+.cuadrado3 {
+    background-color: #ff47e6;
+    width: 49%;
+    height: 100%;
+    float: left; 
+    margin-left: 20px;
+    margin-right: 0; 
+    margin-bottom: 20px;
+}
+.cuadrado4 {
+    background-color: #a0103b;
+    width: 49%;
+    height: 100%;
+    float: left; 
+    margin-right: 0; 
+    margin-bottom: 20px;
+}
+.circulo {
+    width: 300px; 
+    height: 300px; 
+    background-color: #cacc41;
+    border-radius: 50%; 
+    position: absolute; 
+    top: calc((100%/1.45));  
+    left: calc((100%/2.4)); 
+
+}
+
+.contenedor3 {
+    height: 200px; 
+    margin-top: 20px;
+    position: relative;
+}
+
+.cuadrado21{
+    background-color: #5c9e4f;
+    width: 23%;
+    height: 200px;
+    float: left;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.rectangulo21 {
+    background-color: #bda417;
+    width: 74%;
+    height: 200px; 
+    float: left;
+    margin-bottom: 20px;
+}
+
+.rectangulo-grande1{
+    background-color: #5c9e4f;
+    width: 23%;
+    height: 200px;
+    float: left;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+}
+
+.rectangulo-pequeño1 {
+    background-color: #bda417;
+    width: 70%;
+    height: 200px; 
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+}
+
+
+
+
+.rectangulo2{
+
+    background-color: #FF6347;
+    width: 32.03%;
+    height: 15%;
+    float: left;
+    margin-left: 20px;
+    margin-right: 0; 
+    margin-bottom: 20px;
+}
