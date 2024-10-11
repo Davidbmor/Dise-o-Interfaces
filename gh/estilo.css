@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* 100% de la altura de la ventana */
+}
+
+.container {
+    width: 90vw; /* 90% del ancho de la ventana */
+    max-width: 400px; /* Limite en pantallas más grandes */
+    text-align: center;
+    padding: 2vw; /* Padding relativo al ancho de la pantalla */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw; /* Padding relativo */
+}
+
+.close-btn, .cart-btn {
+    background: none;
+    border: 1px solid red;
+    color: white;
+    padding: 2vw; /* Padding basado en la ventana de visualización */
+    cursor: pointer;
+    font-size: 4vw; /* Tamaño de fuente basado en el ancho de la ventana */
+    flex-shrink: 0; /* Evita que los botones se reduzcan */
+}
+
+.logo {
+    font-size: 6vw; /* Tamaño de fuente basado en el ancho de la pantalla */
+    font-family: 'Psychedelic', sans-serif;
+    color: red;
+    flex-shrink: 1; /* Permite que el logo se ajuste */
+}
+
+.menu {
+    margin-top: 5vw; /* Margen superior flexible */
+}
+
+.menu ul {
+    list-style: none;
+    padding: 4vw 0; /* Espaciado flexible */
+}
+
+.menu li {
+    padding: 3vw 0; /* Espaciado entre elementos de la lista */
+    font-size: 4vw; /* Tamaño de fuente adaptable */
+}
+
+.title {
+    font-weight: bold;
+    color: red;
+}
+
+.count {
+    color: red;
+    float: right;
+}

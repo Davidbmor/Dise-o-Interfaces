@@ -21,7 +21,6 @@ html, body{
 .container{
     width: 100%;
     height: 100vh;
-    border: 1px solid #ccc;
 }
 
 .navcollapse{
@@ -38,13 +37,11 @@ html, body{
     /*---same size as its fathers---*/
     height: 100%;
     width: 100%;
-    border: 1px solid #ccc;
 
 }
 
 .item1,.item3{
     flex: 1;
-    border: 1px solid #078f00;
     position: relative;
     height: 100%;
 }	
@@ -62,7 +59,6 @@ html, body{
 
 nav, .slider, .item2footer {
     width: 100%;
-    border:1px solid #44caff;
 }
 
 
@@ -79,12 +75,10 @@ nav, .slider, .item2footer {
 .logo{
     flex:1;
     height: 100%;
-    border: 1px solid #ff0000;
 }
 
 .nav{
     flex: 8;
-    border: 1px solid #ff0000;
 }
 nav{
     flex:1;
@@ -106,7 +100,7 @@ nav{
 }
 
 .imglogo{
-    background-image: url(/assets/img/logo.png);
+    background-image: url(assets/img/logo.png);
     width: 100%;
     height: 100%;
     background-size: contain;
@@ -188,5 +182,213 @@ color: rgb(34, 34, 206);}
 .move{
     height: 40px;
     width: 220px;
-    transform: rotate(-90deg) translateX(-90%) translateY(-200%);
+    transform-origin: 0 0 ;
+    transform: rotate(-90deg) translateX(-84%) translateY(20%);
+}
+
+
+.move a {
+    font-size: 1.2rem;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "Ubuntu";
+} 
+.subscribe{
+    width: 220px;
+    height: 40px;
+    transform-origin: 0 0 ;
+    transform: rotate(-90deg) translateX(-70%) translateY(12%)
+}
+
+.subscribe a {
+    font-size: 1.2rem;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "Ubuntu";
+} 
+
+.earbutton{
+    background-color: black;
+    height: 40px;
+    width: 40px;
+
+    position: absolute;
+    bottom: 0;
+}
+
+.earbutton svg{
+    margin-top: 15px;
+    margin-left: 8px;
+}
+
+/* -------------------------------SLIDER NAV -------------------- */
+
+.item2footer{
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap ;
+    justify-content: center;
+    align-items: center;
+}
+
+.navfooter{
+    list-style-type:none ;
+    
+    display: flex;
+
+    height: 5px;
+
+    max-width: 250px;
+    min-width: 200px;
+
+    flex: 1;
+}
+
+.navitem{
+    height: 100%;
+    flex: 1 0 40px;
+    background-color: rgba(181, 181, 181, 1);
+    cursor: pointer;
+    margin: 5px;
+}
+
+.active , .navitem:hover{
+    background-color: black;
+}
+
+/* ------------------------------ABOUT---------------------- */
+
+.about{
+    width: 100%;
+    height: 100vh;
+
+}
+
+.container-about{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-0, .about-1 , .about-2, .about-3{
+
+    flex: 1;
+
+    height: 50%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    padding: 2rem;
+
+}
+
+.aboutheader{
+
+    margin-bottom: auto;
+    
+}
+
+.aboutheader h1{
+    font-family: "Prompt";
+    font-size: 3rem;
+    margin-top:0 ;
+}
+
+
+.aboutheader h4{
+    font-size: 1.2rem;
+    text-transform: uppercase ;
+    font-family: "Ubuntu";
+    margin:0 auto ;
+}
+
+
+
+progress{
+    width: 100%;
+    height: 3px;
+    background-color: #dedede;
+
+    margin: .5rem 0;
+
+
+}
+progress::-webkit-progress-bar{
+   background-color: #dedede    
+}
+
+
+progress::-webkit-progress-value{
+    height: 3px;
+    background-color: red;
+
+}
+
+
+/* ------------------------------TEAM---------------------- */
+
+.team   {
+    width: 100%;
+    height: 100vh;
+
+    background-color: blanchedalmond;
+
+}
+
+.container-team{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-header{
+
+    width: 100%;
+    flex:2;
+    display: flex;
+    border: 1px solid green;
+
+    justify-content: space-around;
+    align-items: center;
+}
+.team-slider{
+    display: flex;
+    flex: 5;
+    border: 1px solid red;
+    align-items: flex-start;
+}
+
+.section-name h1{
+    font-family: "Prompt";
+    font-size: 3rem;
+    margin-top:0 ;
+}
+
+
+.section-name h4 , span.legend{
+    color: black;
+    font-size: 1.2rem;
+    text-transform: uppercase ;
+    font-family: "Ubuntu";
+    margin:0 auto ;
+}
+
+.slider-card{
+    border: 1px solid red;
+    flex: 0 0 70%;
+    height: 70%;
+}
+.card{
+
+    background-color: rgba(181, 181, 181, 1);
 }
