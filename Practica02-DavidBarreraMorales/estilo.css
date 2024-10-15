@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    height: 100%;
+    margin: 0;
+    background-color: #222;
+
+}
+
+
+
+
+
+
+
+/* +----------------------------------Hero Section------------------------------ */
+
+.hero {
+    width: 100%;
+    height: 1080px; 
+    background-color: black;
+    background-image: url(assets/images/kaze.jpg); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    position: absolute; 
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+  
+}
+
+/* Logo */
+.logo {
+    width: 70px;
+    height: 70px;
+    background-image: url(assets/images/logo_kaze.png); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Nav Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: red;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px;
+    transition: color 0.3s ease;
+
+   
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7), 
+                 2px 2px 5px rgba(0, 0, 0, 0.5); 
+}
+
+
+.nav-links li a:hover {
+    color: #fff;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9); 
+}
+
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+    text-align: center;
+}
+
+
+/* ---------------------------------------Video---------------------------------------- */
+
+.videos-section {
+    background-color: #222;
+    height: 50vh; 
+    width: 100%;
+
+    flex-flow:  column nowrap;
+
+    text-align: center;
+    padding: 70px;
+    
+}
+
+.videos-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+
+}
+
+.videos-section p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #ccc;
+
+}
+
+.video-container {
+    display: flex;
+    
+    justify-content: center; 
+    align-items: center;
+    flex-flow: row nowrap;
+   
+
+    gap: 10px; 
+    padding: 0 10px; 
+
+
+}
+
+.video-card {
+    overflow: hidden;
+    flex: 1 1 calc(33.333% - 20px); 
+    min-width: 250px; 
+    max-width: 400px; 
+    transition: transform 0.3s ease;
+}
+
+.video-card:hover {
+    transform: scale(1.05);
+}
+
+.video-card img {
+    width: 100%;
+    height: auto;
+}
+
+.video-info {
+    padding: 10px;
+    font-size: 1rem;
+    color: #fff;
+}
+/* ---------------------------NAV FOOTER----------------------- */
+.item2footer {
+    width: 100%;
+    display: flex;
+    flex: 1;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.navfooter {
+    list-style-type: none;
+    display: flex;
+    max-width: 250px;
+    min-width: 200px;
+    justify-content: center; 
+    padding: 10px ; 
+    flex: 1;
+}
+
+.navitem {
+    width: 20px; 
+    height: 20px;
+    background-color: rgba(181, 181, 181, 1);
+    border-radius: 50%; 
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.active, .navitem:hover {
+    background-color: black !important;
+}
+
+
+
+/* ---------------------------------Banner 1----------------------------------- */
+
+.banner1{
+
+   margin-top: 70px;
+    width: 100%;
+    height: 70vh;
+
+    display: flex;
+
+    flex-flow: row nowrap;
+}
+
+.banner1-img{
+    flex: 1;
+    margin-top: 2rem;
+    background-image: url(assets/images/KazeBanner.jpg); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* --------------------------------Biography-------------------------------------------- */
+
+.biography-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #222; 
+    color: #fff; 
+}
+
+
+.biography-title {
+    font-size: 36px;
+    color: #fff;
+    margin: 70px;
+    text-align: center;
+}
+
+.biography-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+}
+
+.biography-image {
+    width: 40%;
+    height: 700px;
+    background-image: url(assets/images/Bio.jpg); 
+    background-size: cover;
+    background-position: center;
+}
+
+.biography-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 55%;
+    padding-left: 20px;
+}
+
+.biography-text p {
+    margin: 20px 0;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Estilo del botón */
+.biography-button {
+    margin-top: 20px;
+}
+
+.know-more-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: red;
+    background-color: black;
+    border: 1.5px solid white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.know-more-btn:hover {
+    background-color: white;
+}
+
+
+/* --------------------------------Discografia-------------------------------------------- */
+
+
+.discografia-section {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.album-container {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    max-width: 1200px; 
+    padding: 0 10px; 
+}
+
+.album-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 40px); 
+    max-width: calc(33.333% - 40px); 
+    text-align: center;
+}
+
+.album-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.album-info h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+}
+
+.album-info p {
+    font-size: 0.9em;
+    color: #888;
+}
