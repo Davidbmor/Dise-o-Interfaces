@@ -5,66 +5,106 @@
 }
 
 body {
-    background-color: black;
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, sans-serif;
+    color: #fff;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* 100% de la altura de la ventana */
+    flex-direction: column; /* Asegura que las secciones estén una debajo de otra */
+    align-items: center; /* Centra horizontalmente */
 }
 
-.container {
-    width: 90vw; /* 90% del ancho de la ventana */
-    max-width: 400px; /* Limite en pantallas más grandes */
+.videos-section {
+    background-color: #222;
+    height: 50vh; /* Ocupa la mitad de la altura de la pantalla */
+    width: 100%;
     text-align: center;
-    padding: 2vw; /* Padding relativo al ancho de la pantalla */
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2vw; /* Padding relativo */
-}
-
-.close-btn, .cart-btn {
-    background: none;
+    padding: 20px;
     border: 1px solid red;
-    color: white;
-    padding: 2vw; /* Padding basado en la ventana de visualización */
-    cursor: pointer;
-    font-size: 4vw; /* Tamaño de fuente basado en el ancho de la ventana */
-    flex-shrink: 0; /* Evita que los botones se reduzcan */
 }
 
-.logo {
-    font-size: 6vw; /* Tamaño de fuente basado en el ancho de la pantalla */
-    font-family: 'Psychedelic', sans-serif;
-    color: red;
-    flex-shrink: 1; /* Permite que el logo se ajuste */
+.videos-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
-.menu {
-    margin-top: 5vw; /* Margen superior flexible */
+.videos-section p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #ccc;
 }
 
-.menu ul {
-    list-style: none;
-    padding: 4vw 0; /* Espaciado flexible */
+.video-container {
+    display: flex;
+    justify-content: center; /* Espacio entre los videos */
+    align-items: center;
+    flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea */
+    gap: 10px; /* Espacio entre los videos */
+    padding: 0 10px; /* Margen a los lados */
 }
 
-.menu li {
-    padding: 3vw 0; /* Espaciado entre elementos de la lista */
-    font-size: 4vw; /* Tamaño de fuente adaptable */
+.video-card {
+    background-color: #333;
+    border-radius: 8px;
+    overflow: hidden;
+    flex: 1 1 calc(33.333% - 20px); /* Toma 1/3 del espacio disponible, con margen */
+    min-width: 250px; /* Asegura que nunca sea más pequeño que esto */
+    max-width: 400px; /* Limita el tamaño máximo */
+    transition: transform 0.3s ease;
 }
 
-.title {
-    font-weight: bold;
-    color: red;
+.video-card:hover {
+    transform: scale(1.05);
 }
 
-.count {
-    color: red;
-    float: right;
+.video-card img {
+    width: 100%;
+    height: auto;
+}
+
+.video-info {
+    padding: 10px;
+    font-size: 1rem;
+    color: #fff;
+}
+
+/* Sección de discografía */
+.discografia-section {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido de la sección */
+}
+
+.album-container {
+    display: flex;
+    justify-content: space-around; /* Espacio entre las columnas */
+    flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea */
+    gap: 20px; /* Espacio entre los discos */
+    max-width: 1200px; /* Limita el ancho máximo */
+    padding: 0 10px; /* Margen a los lados */
+}
+
+.album-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 40px); /* Mantiene tres columnas */
+    max-width: calc(33.333% - 40px); /* Asegura que los discos no se desborden */
+    text-align: center;
+}
+
+.album-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.album-info h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+}
+
+.album-info p {
+    font-size: 0.9em;
+    color: #888;
 }
