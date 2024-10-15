@@ -256,7 +256,7 @@ color: rgb(34, 34, 206);}
 }
 
 .active , .navitem:hover{
-    background-color: black;
+    background-color: black !important;
 }
 
 /* ------------------------------ABOUT---------------------- */
@@ -338,7 +338,6 @@ progress::-webkit-progress-value{
     width: 100%;
     height: 100vh;
 
-    background-color: blanchedalmond;
 
 }
 
@@ -361,34 +360,613 @@ progress::-webkit-progress-value{
     justify-content: space-around;
     align-items: center;
 }
-.team-slider{
-    display: flex;
+
+.team-slider {
+    width: 100%;
     flex: 5;
-    border: 1px solid red;
+
+    display: flex;
+    justify-content: center;
     align-items: flex-start;
 }
 
 .section-name h1{
-    font-family: "Prompt";
+    font-family: "Roboto";
     font-size: 3rem;
-    margin-top:0 ;
+    margin-top: 0;
+   
 }
 
-
-.section-name h4 , span.legend{
-    color: black;
+.section-name h4, span.legend {
     font-size: 1.2rem;
-    text-transform: uppercase ;
-    font-family: "Ubuntu";
-    margin:0 auto ;
+    text-transform: uppercase;
+    margin: 0 auto;
+    color: black;
 }
 
-.slider-card{
-    border: 1px solid red;
-    flex: 0 0 70%;
+.slider-card {
+    flex: 0 0 70%; 
     height: 70%;
+    display: flex;
+    gap: 3rem;
 }
-.card{
 
-    background-color: rgba(181, 181, 181, 1);
+.card {
+    flex: 1;
+}
+
+.card1,.card2,.card3{
+    height: 90%;
+
+    background-color: black;
+
+    background-size: cover;
+    background-position: center center ;
+
+    background-repeat: no-repeat;
+}
+
+.card1{
+    background-image: url(assets/img/pexels-magda-ehlers-pexels-985266.jpg);
+}
+.card2{
+    background-image: url(assets/img/pexels-jmark-250591.jpg);
+}
+.card3{
+    background-image: url(assets/img/pexels-pixabay-69776.jpg);
+}
+
+.card footer{
+    text-transform: uppercase;
+    text-align: center;
+
+    font-size: 1.2rem;
+    margin-top: 1.2rem;
+}
+
+
+/* --------------------------------------Works------------------------ */
+
+
+.works{
+    height: 100vh;
+    width: 100%;
+
+    
+
+}
+
+.container-works{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.works-header{
+    width: 100%;
+    flex:2;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.works-body {
+    width: 100%;
+    flex: 5;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.workizda{
+    flex:1;
+    height: 100%;
+    background-image: url(assets/img/pexels-inspiredimages-132474.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+
+}
+
+.workdcha{
+flex:1;
+height: 100%;
+
+display: flex;
+flex-flow: column nowrap;
+justify-content: center;
+}
+
+.workarriba{
+    flex:1;
+    width: 100%;
+
+    background: #000000;
+    color: #fff;
+    font-size: 2rem;
+    text-transform: uppercase;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.workabajo{
+    flex:3;
+    width: 100%;
+
+    background-image: url(assets/img/pexels-pixabay-55748.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+
+
+/* --------------------------------------Works------------------------ */
+.works1{
+    height: 100vh;
+    width: 100%;
+
+    
+
+}
+
+.works1-container{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.works1-fila2{
+    flex:1;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.witem3{
+    flex:1;
+    height: 100%;
+
+    background: #000000;
+    color: #fff;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.witem3 p{
+    margin: 0;
+
+}
+
+.witem4{
+    flex:1;
+    height: 100%;
+    background: #fff;
+    color: #000000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #fff;
+    color: #000000;
+
+}
+
+.witem4 p{
+    margin: 0;
+    padding: 20px;
+}
+
+
+
+.works1-fila1{
+    flex:4;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.subtitle{
+    text-transform: none;
+    text-transform: lowercase;
+    font-size: 1.5rem;
+}
+
+.witem1{
+    flex:1;
+    height: 100%;
+
+    background-image: url(assets/img/pexels-pixabay-46216.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.witem2{
+    flex:1;
+    height: 100%;
+
+    background-image: url(assets/img/pexels-pixabay-53141.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+/* ------------------------------------------DASDasd------------- */
+
+
+.works2{
+    height: 100vh;
+    width: 100%;
+
+    
+
+}
+
+.works2-container{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.works2-fila2{
+    flex:1;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.witem7{
+    flex:1;
+    height: 100%;
+
+    background: #000000;
+    color: #fff;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.witem7 p{
+    margin: 0;
+
+}
+
+.witem8{
+    flex:1;
+    height: 100%;
+    background: #fff;
+    color: #000000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #fff;
+    color: #000000;
+
+}
+
+.witem8 p{
+    margin: 0;
+    padding: 20px;
+}
+
+
+
+.works2-fila1{
+    flex:4;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.subtitle{
+    text-transform: none;
+    text-transform: lowercase;
+    font-size: 1.5rem;
+}
+
+.witem5{
+    flex:1;
+    height: 100%;
+
+    background-image: url(assets/img/pexels-magda-ehlers-pexels-985266.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.witem6{
+    flex:1;
+    height: 100%;
+
+    background-image: url(assets/img/pexels-inspiredimages-132474.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* -------------------------Services----------------- */
+
+
+
+
+
+.services{
+    height: 100vh;
+    width: 100%;
+
+    
+
+}
+
+.services-container{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.services-header{
+    width: 100%;
+    flex:2;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.services-body{
+    width: 60%;
+    flex: 5;
+
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+.ser{
+    flex: 1 0 50%;
+    padding: 2rem;
+    position: relative;
+}
+
+.ser p:first-child{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+
+}
+
+.ser p:last-child{
+
+    line-height: 1.5rem;
+
+}
+
+.ser1, .ser2{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+}
+.ser1 p,.ser3 p {
+    text-align: right;
+}
+
+.ser1::before{
+    content: "";
+    width: 90%;
+    border: 1px black solid;
+    position: absolute ;
+
+    bottom: 0;
+    right: 2rem;
+}
+
+
+.ser2::before{
+    content: "";
+    height: 70%;
+    border: 1px black solid;
+    position: absolute ;
+
+    left: 0;
+    bottom: 2rem;
+}
+
+.ser3::before{
+    content: "";
+    height: 70%;
+    border: 1px black solid;
+    position: absolute ;
+
+    right: 0;
+    top: 2rem;
+}
+
+
+.ser4::before{
+    content: "";
+    width:90%;
+    border: 1px black solid;
+    position: absolute ;
+
+    top: 0;
+    left: 2rem;
+}
+
+
+
+/* ----------------------------------------------News------------------------------ */
+
+
+/* ------------------------------NEWS---------------------- */
+
+.news  {
+    flex: 2;
+    width: 100%;
+    height: 100vh;
+}
+
+.news-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.news-header{
+
+    width: 100%;
+    flex:2;
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+}
+
+.news-body{
+    flex: 5;
+    width: 60%;
+
+    display: flex;
+
+}
+
+.news-foto{
+    flex: 4;
+    height: 80%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-texto{
+    flex: 8;
+    height: 60%;
+    padding: 2rem;
+}
+
+.newspic {
+    flex: 5;
+    width: 100%;
+    background: grey;
+    background-image: url(assets/img/pexels-pixabay-54323.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.newsnav {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sldopt {
+    height: 4px;
+    flex:  1 0 40px;
+
+    background-color: grey;
+    cursor: pointer;
+
+    margin-right: 5px;
+}
+
+.title {
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
+/* ----------------------------------------------------------QUOTE-------------------- */
+
+.quote{
+    width: 100%;
+    height: 100vh;
+    padding: 5%;
+
+}
+
+.quote-container{
+    height: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    background-image: none;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.quote-little{
+    color: white;
+    font-size: 1.2rem;
+}
+.quote-great{
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+
 }
