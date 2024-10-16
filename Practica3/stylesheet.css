@@ -960,13 +960,208 @@ justify-content: center;
     background-position: center center;
     background-repeat: no-repeat;
 }
-.quote-little{
+.myquote {
+    text-align: center;
+}
+
+.myquote .newnav {
+    width: 200px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+.quote-little {
     color: white;
     font-size: 1.2rem;
 }
-.quote-great{
+
+.quote-great {
     color: white;
-    font-size: 2rem;
+    font-size:2rem;
     text-transform: uppercase;
+}
+
+.activew {
+    background: white;
+}
+
+.myquote .newnav .sldopt:hover{
+    background: white;
+}
+
+
+
+
+
+
+
+/* ----------------------Contact----------------------- */
+
+
+.contact   {
+    flex: 2;
+    width: 100%;
+    height: 100vh;
+}
+
+.contact-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contact-header{
+
+    width: 100%;
+    flex:2;
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-body{
+    flex: 5;
+
+    width: 60%;
+    display: flex;
+    flex-flow: column nowrap;
+
+    border:  1px solid red;
+}
+
+.line{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.line *{
+    flex: 1;
 
 }
+
+.line span:nth-child(2){
+    text-align: center;
+}
+
+.line span:nth-child(3){
+    text-align: right;
+}
+
+form{
+    height: 100%;
+    display: flex;
+    flex-flow:  column nowrap;
+    text-align: center;
+    justify-content: space-around;
+    padding-bottom: 5rem;
+}
+
+input[type=text]{
+    border:0;
+    border-bottom: 1px solid black;
+    text-align: center;
+    font-size: 1.1rem;
+
+    padding: .5rem;
+
+}
+
+input[type=text]:focus, textarea:focus{
+
+    border-bottom: 2px solid rgb(150, 11, 11);
+    outline:none;
+}
+
+
+textarea{
+    width: 100%;
+    height: 100px;
+    margin-top: .5rem;
+    font-size: 1rem;
+    resize: none;
+}
+
+.messagetext span {
+    font-size: 1.1rem;
+    color: #807e7e;
+}
+
+input[type=submit]{
+    border: 0;
+    background-color: black;
+    color: white;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/* -----------------------------------------LAST--------------------------------- */
+.last{
+    height: 100vh;
+    width: 100%;
+    padding: 5%;
+}
+.last-container{
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+.last-item1{
+    height: 100%;
+    flex: 1;
+
+
+    background-image: url(assets/img/pexels-pixabay-54323.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.last-item2{
+
+    height: 100%;
+    flex: 1;
+
+    background-image: url(assets/img/pexels-pixabay-54323.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+
+}
+
+
+
+
+
+footer{
+    width: 100%;
+    height: 20vh;
+
+    display: flex;
+    flex-flow:  column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.logofooter{
+    width: 300px;
+    height: 100%;
+    flex: 1;
+
+    background-image: url(assets/img/logo.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+
+

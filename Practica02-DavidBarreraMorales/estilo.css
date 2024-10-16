@@ -53,7 +53,7 @@ body, html {
     width: 70px;
     height: 70px;
     background-image: url(assets/images/logo_kaze.png); 
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -251,7 +251,7 @@ body, html {
     height: 700px;
     background-image: url(assets/images/Bio.jpg); 
     background-size: cover;
-    background-position: center;
+    background-position: center center;
 }
 
 .biography-text {
@@ -271,7 +271,7 @@ body, html {
 
 /* Estilo del botón */
 .biography-button {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .know-more-btn {
@@ -289,8 +289,29 @@ body, html {
 }
 
 
-/* --------------------------------Discografia-------------------------------------------- */
 
+
+
+/* ---------------------------------Banner 2----------------------------------- */
+
+.banner2{
+     width: 100%;
+     height: 70vh;
+ 
+     display: flex;
+ 
+     flex-flow: row nowrap;
+ }
+ 
+ .banner2-img{
+     flex: 1;
+     background-image: url(assets/images/img_bottom.jpg); 
+     background-size: contain;
+     background-position: center;
+     background-repeat: no-repeat;
+ }
+
+/* --------------------------------Discografia-------------------------------------------- */
 
 .discografia-section {
     width: 100%;
@@ -298,6 +319,11 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center; 
+}
+
+.discografia-section h2 {
+    margin-bottom: 20px;
+    padding: 2rem;
 }
 
 .album-container {
@@ -310,18 +336,13 @@ body, html {
 }
 
 .album-card {
-    background: #fff;
-    border-radius: 8px;
     padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex: 1 1 calc(33.333% - 40px); 
-    max-width: calc(33.333% - 40px); 
+    flex: 1 1 31.333%; 
     text-align: center;
 }
 
 .album-card img {
     width: 100%;
-    border-radius: 8px;
 }
 
 .album-info h3 {
@@ -332,4 +353,62 @@ body, html {
 .album-info p {
     font-size: 0.9em;
     color: #888;
+}
+
+/* ---------------------------------Last Album-------------------------------- */
+
+
+.lastalbum {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.lastalbum-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.lastalbum-content {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap; /* For responsiveness */
+}
+
+.lastalbum-img {
+    width: auto;
+    max-width: 400px; /* Ensures image doesn't get too wide */
+    height: 352px; /* Assuming same height as iframe */
+    background-image: url(assets/images/albun1.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    flex-grow: 1; 
+}
+
+.lastalbum-iframe {
+    width: 100%;
+    max-width: 600px;
+    flex-grow: 1; /* The iframe will take more space */
+}
+
+.lastalbum-description {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.lastalbum-description p {
+    text-align: justify;
+    
+    font-size: 16px;
+    line-height: 1.5;
 }
