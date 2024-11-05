@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    padding: 4rem;
+}
+
+main {
+    flex : 1;
+}
+.carrousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    transform-style: preserve-3d; 
+    transform: perspective(1000px);
+}
+
+.carrousel .item{
+    flex : 1 1 ;
+    filter: brightness(0);
+}
+.carrousel .item:hover{
+    filter: brightness(1);
+}
+
+.carrousel .item img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}

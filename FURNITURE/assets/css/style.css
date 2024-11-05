@@ -23,6 +23,13 @@
          url(../fonts/Issey2.otf);
 }
 
+@font-face {
+    font-family: "Murakami";
+    src: url(../fonts/AuthorSignature.ttf),
+          ;
+}
+
+
 :root {
     --red:#C10200;
     --grey: rgba(181,181,181,1);
@@ -259,7 +266,7 @@ header {
 
 .nature-by h1 {
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size:clamp(1.5rem, 1.333rem + 0.556vw, 2rem);
     
     display: flex;
     justify-content: flex-start;
@@ -272,7 +279,7 @@ header {
 
 .sign-miyaki {
     font-family: Issey !important;
-    font-size: 6rem;
+    font-size: clamp(4rem, 3.333rem + 2.222vw, 6rem);
     font-weight: 100;
 }
 
@@ -313,6 +320,7 @@ header {
 .materials h2 {
     text-transform: uppercase;
     font-size: 2.5rem;
+    margin: 4rem 0;
 }
 
 .nature-materials {
@@ -382,8 +390,352 @@ header {
     background-repeat: no-repeat;
 }
 
+.material-foot p {
+    font-size: .9rem;
+    text-align:center;
+}
+
+.material-foot h3 {
+    text-align:center;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+}
 
 
+/* ------------------------------------------------------------------------------------------   STONE  --------*/
+
+.stone-by {
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.stone-by article {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+}
+
+.stone-izda {
+    flex: 1;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.inalco {
+    flex: 1; 
+    aspect-ratio: 16/ 6;
+    width: 100%;
+    background-image: url(../img/inalco.jpg);
+    background-size: cover;
+    background-position:center center;
+    background-repeat: no-repeat;
+}
+
+.stone-txt {
+    flex: 1;
+    
+}
+
+.collection {
+    font-family: Montserrat;
+    font-weight: 800;
+    margin: 0  ;
+    padding: 0  ;
+    font-size: clamp(5rem, 1.333rem + 12.222vw, 16rem);
+    text-transform: uppercase; 
+}
+
+
+
+.stone-grey {
+    flex: 1;
+    width: 100%;
+    aspect-ratio: 16/ 6;
+    
+    background-image: url(../img/grey-stone.jpg);
+    background-size: cover;
+    background-position:center center;
+    background-repeat: no-repeat;
+}
+
+
+
+.stone-dcha {
+    flex: 1;
+    
+    border: 1px solid red;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    
+}
+
+
+.stone-dcha h1 {
+    font-family: NouvelBold;
+    text-transform: uppercase;
+    font-size: clamp(1.5rem, 1.333rem + 0.556vw, 2rem);
+    
+    
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+ 
+.sign-2 {
+    font-family: Murakami;
+    text-transform: lowercase;
+    font-weight: 100;
+    font-size: clamp(3rem, 2.333rem + 2.222vw, 5rem);
+}
+
+.sign-2 span {
+    text-transform: uppercase;
+}
+
+.quote {
+    margin-top: auto;
+    width: 24rem;
+    font-weight: 400;
+    font-size: 1.4rem;
+    text-align:right;
+    margin-left: auto;
+    margin-top: auto;
+    border: 1px solid yellow;
+    
+}
+
+ 
+/*------ UMBRA ------*/
+
+.umbra {
+    width: 100%;
+    margin-top: 4rem;
+    position: relative;
+}
+
+.umbra-pic {
+    
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    
+    background-image: url(../img/umbra.jpg);
+    background-size: cover;
+    background-position:center center;
+    background-repeat: no-repeat;
+    
+    z-index: 9;
+}
+
+
+.umbra-txt {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    z-index: 99;
+    
+    color: white;
+    text-align: right;
+}
+
+.umbra-title, .geo-title {
+    text-transform: uppercase;
+    margin: 0;
+    font-family: Montserrat;
+   font-size: clamp(1rem, 0.667rem + 1.111vw, 2rem);
+    letter-spacing: .1rem;
+}
+
+.umbra-finish {
+    margin: 0;
+    font-family: Montserrat;
+    font-size: clamp(0.9rem, 0.833rem + 0.222vw, 1.1rem);
+    font-weight: 200;
+}
+
+
+/*-------  GEO -----------*/
+
+.geo {
+    width: 100%;
+    margin-top: 4rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:center;
+    align-items: stretch;
+    
+    gap: 2rem;
+ 
+}
+
+.geo-izda {
+    flex: 2;
+    aspect-ratio: 7 / 8;
+    background-image: url(../img/geo.jpg);
+    background-size: cover;
+    background-position:center center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 9;
+}
+
+.geo-txt {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    z-index: 99;
+    color: white;
+}
+
+.geo-finish {
+    position: absolute;
+    bottom: 1.2rem;
+    right: .8rem;
+    z-index: 99;
+    color: white;
+     font-size: clamp(0.9rem, 0.833rem + 0.222vw, 1.1rem);
+    margin: 0;
+    font-family: Montserrat;
+    
+    font-weight: 200;
+}
+
+.geo-dcha {
+    flex: 3;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+    border: 1px solid blue;
+}
+
+.geo-dcha-abajo {
+    width: 100%;
+    aspect-ratio: 8 / 3;
+    
+    background-image: url(../img/geo2.jpg);
+    background-size: cover;
+    background-position:center center;
+    background-repeat: no-repeat;
+}
+
+/*--------- SHOWROOM 1 -------------*/
+.section-name-2 {
+    font-family: NouvelBold;
+    font-size: clamp(2rem, 1.333rem + 2.222vw, 4rem);
+    margin: 4rem 0;
+    text-transform: uppercase;
+    
+}
+
+.showroom-1 {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+}
+
+.showroom-1-izda {
+    flex: 1;
+    aspect-ratio: 3 / 4;
+    background-image: url(../img/showroom-inalco.jpg);
+    background-size: cover;
+    background-position:center center;
+    background-repeat: no-repeat;
+    
+    position: relative;
+}
+
+.showroom-1-dcha {
+    flex: 1;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: stretch;
+    
+    gap: 2rem;
+}
+
+.showroom-1-dcha-up {
+    width: 100%;
+    flex: 6;
+    position: relative;
+    
+    background-image: url(../img/showroom2.jpg);
+    background-size: cover;
+    background-position:center center;
+    background-repeat: no-repeat;
+}
+
+.showroom-1-dcha-down {
+    width: 100%;
+    flex: 4;
+    position: relative;
+    
+    background-image: url(../img/living-showrrom.jpg);
+    background-size: cover;
+    background-position:center center;
+    background-repeat: no-repeat;
+}
+
+.inalco-living-1, .inalco-living-2, .inalco-kitchen {
+    position: absolute;
+    color:white;
+    text-transform: uppercase;
+    margin: 0;
+    font-family: Montserrat;
+    font-size: clamp(1rem, 0.667rem + 1.111vw, 2rem);
+    letter-spacing: .1rem;
+}
+
+.inalco-living-1 {
+    left:  clamp(1rem, 0.667rem + 1.111vw, 2rem);
+    top: clamp(1rem, 0.667rem + 1.111vw, 2rem);
+}
+
+.inalco-living-2 {
+    left: clamp(1rem, 0.667rem + 1.111vw, 2rem);
+    bottom: clamp(1rem, 0.667rem + 1.111vw, 2rem);
+}
+
+.inalco-kitchen {
+    right: clamp(1rem, 0.667rem + 1.111vw, 2rem);
+    top: clamp(1rem, 0.667rem + 1.111vw, 2rem);
+}
+
+
+
+/*--------- SHOWROOM 2 ---------*/
+
+.showroom-2 {
+    
+    position: relative;
+    
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    
+    background-image: url(../img/kitchen-showroom.jpg);
+    background-size: cover;
+    background-position:center center;
+    background-repeat: no-repeat;
+    
+    margin-top: 2rem;
+    
+}
 
 
 
@@ -402,6 +754,14 @@ header {
     
     .motto-legend span:nth-child(13),  .motto-legend span:nth-child(12) {
         display:none;
+    }
+    
+    .stone-by article {
+        flex-direction: column;
+    }
+    
+    .quote {
+        margin: 4rem 0 2rem auto;
     }
 }
 
@@ -451,6 +811,63 @@ header {
         margin-top: 4rem;
     }
     
+    .nature-by article {
+        flex-direction: column-reverse;
+    }
+    
+    .nature-dcha {
+        width: 100%;
+       
+    }
+    
+    .literal {
+        flex: 1;
+        aspect-ratio: 2 / 7;
+    }
+    
+    .nature-pic {
+        flex: 1;
+        aspect-ratio: 2 / 7;
+    }
+    
+    .narrow {
+        display: flex !important;
+    }
+    
+    .wide {
+        display: none !important;
+    }
+    
+    .nature-izda  {
+        margin-top: 2rem;
+        
+    }
+    
+    .forest {
+        flex-direction: column;
+    }
+    
+    .forest-pic {
+        width: 100%;
+        aspect-ratio: 16 / 8 ;
+    }
+    
+    .geo {
+        flex-flow: column-reverse nowrap;
+    }
+    
+    .showroom-1 {
+        flex-direction: column-reverse;
+    } 
+    
+    .showroom-1-dcha-up {
+        aspect-ratio: 16 / 9;
+    }
+    
+    .showroom-1-dcha-down {
+        aspect-ratio: 16 / 9;
+    }
+    
 }
 
 
@@ -459,5 +876,11 @@ header {
         background: coral;
     }
     
+    .nature-by h1 {
+        justify-content: center;
+    }
     
+    .stone-dcha h1 {
+        justify-content: center;
+    }
 }
