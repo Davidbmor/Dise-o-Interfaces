@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
-body{
+body {
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -14,28 +14,65 @@ body{
 }
 
 main {
-    flex : 1;
+    flex: 1;
 }
-.carrousel{
+
+.carrousel {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
-
-    transform-style: preserve-3d; 
+    transform-style: preserve-3d;
     transform: perspective(1000px);
+    cursor: pointer;
 }
 
-.carrousel .item{
-    flex : 1 1 ;
+.carrousel .item {
+    flex: 1 1;
     filter: brightness(0);
-}
-.carrousel .item:hover{
-    filter: brightness(1);
+    transition: transform 0.5s, filter 0.5s;
+    transform-origin: center;
 }
 
-.carrousel .item img{
+.carrousel .item:hover {
+    filter: brightness(1);
+    transform: translateZ(200px) rotateY(360deg);
+}
+
+.carrousel .item img {
     width: 100%;
     height: auto;
     object-fit: contain;
+}
+
+/* Ajuste del efecto de los elementos adyacentes */
+.carrousel .item:hover + * {
+    filter: brightness(0.6);
+    transform: translateZ(150px) rotateY(45deg);
+}
+
+.carrousel .item:hover + * + * {
+    filter: brightness(0.4);
+    transform: translateZ(100px) rotateY(20deg);
+}
+
+.carrousel .item:hover + * + * + * {
+    filter: brightness(0.2);
+    transform: translateZ(50px) rotateY(10deg);
+}
+
+/* Ajuste de efectos en elementos anteriores al actual */
+.carrousel .item:has(+* :hover) {
+    filter: brightness(0.6);
+    transform: translateZ(150px) rotateY(-45deg);
+}
+
+.carrousel .item:has(+* +*:hover) {
+    filter: brightness(0.4);
+    transform: translateZ(100px) rotateY(-20deg);
+}
+
+.carrousel .item:has(+* +*+*:hover) {
+    filter: brightness(0.2);
+    transform: translateZ(50px) rotateY(-10deg);
 }
