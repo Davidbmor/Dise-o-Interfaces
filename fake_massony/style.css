@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 2rem;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid red;
+    
+    columns: 3 300px;
+    
+    margin-bottom: 4rem;
+}
+
+img {
+    display: block;
+    margin-bottom: 1rem;
+    width: 100%;
+    
+    border-image: fill 0  linear-gradient(black, rgba(0,0,0,.4));
+}
+
+.overlay {
+    width: 100%;
+    height: 200px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    
+    background-image: url(../img/8.jpg);
+    background-size: cover;
+    color: white;
+    border-image: fill 0 linear-gradient(#0003, #000);
+    
+}
+

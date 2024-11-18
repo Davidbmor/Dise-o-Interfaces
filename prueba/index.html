@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="slider">
+        <div class="content">
+            <div class="legend">
+                <div class="little">Style is Everything</div>
+                <div class="great">Minimal <br />Approach</div>
+                <div class="medium">Logo / Web / Print</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <section class="reservation-section">
+        <h2>Reserva tu mesa</h2>
+        <div class="calendar-container">
+            <input type="date" id="reserva-fecha" name="fecha" required>
+        </div>
+        <form class="reservation-form">
+            <!-- Nombre -->
+            <div class="form-group">
+                <label for="reserva-nombre">Nombre</label>
+                <input type="text" id="reserva-nombre" name="nombre" placeholder="Tu nombre" required>
+            </div>
+            <!-- Email -->
+            <div class="form-group">
+                <label for="reserva-email">Email</label>
+                <input type="email" id="reserva-email" name="email" placeholder="Tu email" required>
+            </div>
+            <!-- Hora -->
+            <div class="form-group">
+                <label for="reserva-hora">Hora</label>
+                <select id="reserva-hora" name="hora" required>
+                    <option value="" disabled selected>Selecciona la hora</option>
+                    <option value="13:00">13:00</option>
+                    <option value="13:30">13:30</option>
+                    <option value="14:00">14:00</option>
+                    <option value="14:30">14:30</option>
+                    <option value="20:00">20:00</option>
+                    <option value="20:30">20:30</option>
+                    <option value="21:00">21:00</option>
+                    <option value="21:30">21:30</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="reserva-personas">Número de personas</label>
+                <input type="number" id="reserva-personas" name="personas" placeholder="Número de personas" min="1" max="20" required>
+            </div>
+            <!-- Botón de reserva -->
+            <button type="submit" class="submit-button">Reservar</button>
+        </form>
+    </section>
+    <section class="banner1">
+        <div class="banner1-img"></div>
+    </section>
+
+    <div class="form-container">
+        <h2>Contacta con nosotros</h2>
+
+        <form class="contact-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Escribe tu email" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="contactar">Contactar con</label>
+                <select id="contactar" name="contactar" required>
+                    <option value="" disabled selected>Selecciona una opción</option>
+                    <option value="soporte">Soporte</option>
+                    <option value="ventas">Ventas</option>
+                    <option value="general">General</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="asunto">Asunto del mensaje</label>
+                <input type="text" id="asunto" name="asunto" placeholder="Asunto">
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="¿En qué podemos ayudarte?" required></textarea>
+            </div>
+            <div id="submit-button"><button type="submit" class="submit-button">ENVIAR</button> </div>
+        </form>
+    </div>
+
+    <section class="map-section">
+        <div class="map-header">
+            <a href="https://www.google.com/maps/@43.3730029,-2.7886672,15z?hl=es-ES&entry=ttu&g_ep=EgoyMDI0MTExMy4xIKXMDSoASAFQAw%3D%3D" 
+               target="_blank" 
+               class="map-link">
+               Ver mapa completo →
+            </a>
+        </div>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11940.697616831829!2d-2.788667189923675!3d43.37300294093465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1731919640986!5m2!1ses!2ses" 
+            width="1920" 
+            height="350" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+
+</body>
+</html>
