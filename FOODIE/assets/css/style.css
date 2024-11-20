@@ -222,6 +222,12 @@ button{
 }
 
 
+h2{
+    font-size: clamp(2rem, 1.333rem + 1.389vw, 3rem);
+}
+
+
+
 /*-----------------DISCOVER-----------------*/
 
 .discover{
@@ -285,5 +291,10 @@ button{
     & article > *{
         flex: 1;
         border: 1px solid rebeccapurple;
+
+        & img{
+            max-width: 100%;
+            aspect-ratio: 4/3;
+        }
     }
 }
