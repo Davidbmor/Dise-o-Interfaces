@@ -1,8 +1,13 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
 }
+
 
 :root{
     --main-color: #23252E;
@@ -217,18 +222,68 @@ button{
 }
 
 
+/*-----------------DISCOVER-----------------*/
+
 .discover{
     width: 100%;
-    padding: 4rem;
     display: flex;
-
+    justify-content: center;
+    align-items: stretch;
+    padding: 8rem;
+    gap: 4rem;
 }
 
-.discover-text , .discover-pic{
-    flex: 1;
+.discover-text, .discover-pic{
+    flex:1;
 }
 
 .discover-pic{
     aspect-ratio: 1/1;
     background-image: url(https://www.recetassinlactosa.com/wp-content/uploads/2018/04/Pastel-tres-leches-YouTube.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.discover-text{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+
+@media screen and(max-width: 500px) {
+    .discover{
+        padding: 2rem;
+    }
+}
+@media screen and (max-width:1200px) {
+    .discover{
+        flex-direction: column;
+    }
+    
+}
+
+
+.latest{
+    text-align: center;
+
+    & h4{
+        margin: 2rem;
+    }
+
+    & p {
+        margin: 2rem;
+    }
+    & article{
+        display: flex;
+    }
+
+    & article > *{
+        flex: 1;
+        border: 1px solid rebeccapurple;
+    }
 }
