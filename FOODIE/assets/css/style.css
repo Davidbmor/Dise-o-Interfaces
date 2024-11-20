@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color: #23252E;
+    --secondary-color: #a04b4b;
+}
+main{
+    height: 100vh;
+    width: 100%;
+
+    background: url(../img/hero.webp) no-repeat center center/cover;
+}
+header{
+    width: 100%;
+    height: 8vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+
+
+    position: sticky;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & .logo{
+        width: 100px;
+        max-height: 100%;
+
+    }
+
+    & .logo img{
+        width: 100%;
+        height: 100%;
+    }
+
+    & nav{
+        flex: 5;
+
+
+    }
+
+    
+    
+}
+
+
+.nav-bar{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2rem;
+}
+
+.nav-bar li{
+    margin-left: 2rem;
+}
+
+.nav-bar li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+}
+
+.tag-line{
+    width: 40%;
+
+    font-size: clamp(1.5rem, 0.667rem + 2.778vw, 4rem);
+   
+}
+
+.hero {
+    background: rgba(0, 0, 0, 0.295);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+
+    z-index: -1;
+
+    margin-top: -8vh;
+
+    padding-left: 4rem ;
+}
+
+
+button{
+    padding: .7rem 3rem;
+    border-radius: 20px;
+    border: none;
+    text-transform: uppercase;
+}
+
+.join {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.explore{
+    border:2px solid var(--main-color);
+    color: var(--main-color);
+}
+
+
+
+/*-------------------subhero---------------------*/
+
+.subhero {
+    display: grid;
+    grid-template-columns: 3fr 3fr 4fr;
+    grid-template-rows: 1fr;
+    border-bottom: 1px solid red;
+    overflow: hidden;
+}
+
+.subhero > * {
+    padding: 2rem;
+}
+
+.our-blog {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.ul-items {
+    list-style-type: none;
+    margin-top: 2rem;
+    
+    & li {
+        margin-top: 1.5rem;
+    }
+
+    & li h4 i {
+        margin-right: 2rem;
+    }
+
+    & li h4 {
+        margin-bottom: .5rem;
+    }
+
+    & li p {
+        margin-left: 3rem;
+    }
+}
+
+.blog-1, .blog-2 {
+    margin-top: 2rem;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.blog-1 img, .blog-2 img {
+    flex: 1;
+    object-fit: cover;
+    object-position: center;
+    height: 6rem;
+}
+
+.blog-text {
+    flex: 2;
+}
+
+.blog-text p {
+    margin: 1.5rem 0;
+}
+
+.our-blog .join {
+    margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .subhero {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .our-blog {
+        grid-column: 1 / 3;
+
+    }
+
+    .news {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+
+    }
+}
+
+@media screen and (max-width: 955px) {
+    .subhero {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 2fr;
+
+        & > * {
+            grid-column: 1/3;
+        }
+
+        & .news {
+            flex-direction: column;
+        }
+    }
+
+    .our-blog > button{
+        margin-left: calc(100% - 3rem);
+    }
+}
+
+
+.discover{
+    width: 100%;
+    padding: 4rem;
+    display: flex;
+
+}
+
+.discover-text , .discover-pic{
+    flex: 1;
+}
+
+.discover-pic{
+    aspect-ratio: 1/1;
+    background-image: url(https://www.recetassinlactosa.com/wp-content/uploads/2018/04/Pastel-tres-leches-YouTube.jpg);
+}

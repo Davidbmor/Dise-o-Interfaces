@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Form</title>
+        <link rel="stylesheet" href="./assets/css/stylecontact.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+
+        <header>
+            <nav>
+                <div class="logo"><img src="./assets/img/logo.png" alt></div>
+                <div class="main-nav">
+
+                    <div class="menu-on">
+                        <ul class="menu-on-nav">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="team.html">Team</a>
+                            </li>
+                            <li>
+                                <a href="menu.html">Menu</a>
+                            </li>
+                            <li>
+                                <a href="contact.html" class="active">Contact</a>
+                            </li>
+
+                            <div class="div-icon"><a href="#"><i
+                                        class="fa-brands fa-facebook-f"></i></a></div>
+                            <div class="div-icon"><a href="#"><i
+                                        class="fa-brands fa-instagram"></i></a></div>
+                            <div class="div-icon"><a href="#"><i
+                                        class="fa-brands fa-x-twitter"></i></a></div>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+
+        <div class="slider">
+            <div class="content">
+                <div class="legend">
+                    <div class="little">We're Here to Help</div>
+                    <div class="great">Get in Touch</div>
+                    <div class="medium">Support / Sales / General Inquiries</div>
+                </div>
+            </div>
+        </div>
+        
+
+        <section class="reservation-section">
+            <h2>Book Your Table</h2>
+            <div class="calendar-container">
+                <input type="date" id="reserva-fecha" name="fecha" required>
+            </div>
+            <form class="reservation-form">
+                <div class="form-group">
+                    <label for="reserva-nombre">Name</label>
+                    <input type="text" id="reserva-nombre" name="nombre"
+                        placeholder="Your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="reserva-email">Email</label>
+                    <input type="email" id="reserva-email" name="email"
+                        placeholder="Your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="reserva-hora">Time</label>
+                    <select id="reserva-hora" name="hora" required>
+                        <option value disabled selected>Select the time</option>
+                        <option value="13:00">13:00</option>
+                        <option value="13:30">13:30</option>
+                        <option value="14:00">14:00</option>
+                        <option value="14:30">14:30</option>
+                        <option value="20:00">20:00</option>
+                        <option value="20:30">20:30</option>
+                        <option value="21:00">21:00</option>
+                        <option value="21:30">21:30</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="reserva-personas">Number of People</label>
+                    <input type="number" id="reserva-personas" name="personas"
+                        placeholder="Number of people" min="1" max="20"
+                        required>
+                </div>
+                <button type="submit" class="submit-button">Book</button>
+            </form>
+        </section>
+        <section class="banner1">
+            <div class="banner1-img"></div>
+        </section>
+
+        <div class="form-container">
+            <h2>Contact Us</h2>
+
+            <form class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nombre">Name</label>
+                        <input type="text" id="nombre" name="nombre"
+                            placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email"
+                            placeholder="Enter your email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="contactar">Contact</label>
+                    <select id="contactar" name="contactar" required>
+                        <option value disabled selected>Select an option</option>
+                        <option value="soporte">Support</option>
+                        <option value="ventas">Sales</option>
+                        <option value="general">General</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="asunto">Message Subject</label>
+                    <input type="text" id="asunto" name="asunto"
+                        placeholder="Subject">
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Message</label>
+                    <textarea id="mensaje" name="mensaje" rows="5"
+                        placeholder="How can we help you?"
+                        required></textarea>
+                </div>
+                <div id="submit-button"><button type="submit"
+                        class="submit-button">SEND</button> </div>
+            </form>
+        </div>
+
+        <section class="map-section">
+            <div class="map-header">
+                <a
+                    href="https://www.google.com/maps/@43.3730029,-2.7886672,15z?hl=es-ES&entry=ttu&g_ep=EgoyMDI0MTExMy4xIKXMDSoASAFQAw%3D%3D"
+                    target="_blank"
+                    class="map-link">
+                    View full map →</a>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11940.697616831829!2d-2.788667189923675!3d43.37300294093465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1731919640986!5m2!1ses!2ses"
+                width="1920"
+                height="350"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+        <footer class="general-footer">
+            <div class="footer-container">
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p>Email: <a
+                            href="mailto:vireluxe@vireluxerestaurant.com">vireluxe@vireluxerestaurant.com</a></p>
+                </div>
+
+                <div class="footer-info">
+                    <h3>Acknowledgements</h3>
+                    <p>⭐️⭐️⭐️ Michelin Stars</p>
+                    <p>🏆 Tripadvisor Award for Best Restaurant 2024</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Gourmet Restaurant. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>

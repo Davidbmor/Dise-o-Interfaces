@@ -1,0 +1,645 @@
+/* Estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Della+Respira&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f6f3;
+
+}
+
+
+
+h1 {
+  font-family: "Philosopher", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: black;
+}
+
+
+p {
+  font-family: "Mulish", sans-serif;
+  font-weight: 300;
+  font-size: 1.3rem;
+  color: #111123;
+}
+
+h2 {
+  font-family: "Della Respira", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #111123;
+}
+
+.hero-photo {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 100;
+  backdrop-filter: blur(5px);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo {
+  flex: 4;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px; 
+  height: 50px; 
+  object-fit: contain; 
+}
+
+
+.main-nav {
+  flex: 6;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1rem;
+}
+
+.menu-on {
+  width: 50%;
+  border: 1px;
+}
+
+.menu-on-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  text-decoration: none;
+
+
+}
+
+.menu-on-nav li {
+  position: relative;
+}
+
+
+.menu-on-nav li a {
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Philosopher", sans-serif;
+  font-weight: 300;
+  position: relative;
+  padding-bottom: 5px;
+  display: inline-block;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu-on-nav li a:hover {
+}
+
+.div-icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease-in-out;
+
+
+}
+
+.menu-on-nav li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px; /* Grosor de la línea */
+  background-color: #b5a089;
+  transition: width 0.3s ease-in-out;
+}
+
+.menu-on-nav li a:hover::after,
+.menu-on-nav li a.active::after {
+  width: 100%;
+}
+
+.div-icon:hover {
+  background-color: #b5a089;
+}
+
+.div-icon a {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+@media (max-width: 1100px) {
+  .menu-on-nav li,
+  .div-icon {
+    margin-right: 20px;
+  }
+
+  .menu-on-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .div-icon {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-on-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-on-nav li {
+    margin-bottom: 10px;
+  }
+
+  .menu-on-nav li a {
+    font-size: 1rem;
+  }
+
+  .div-icon {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-on-nav {
+    width: 100%;
+  }
+
+  .menu-on-nav li a {
+    font-size: 0.9rem;
+  }
+
+  .div-icon {
+    margin-bottom: 10px;
+  }
+}
+
+
+
+/*-----------boton------------*/
+
+.boton {
+  padding: 8px 40px;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: #111123;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #111123;
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+  line-height: 1.4em;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.boton::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  height: 3px;
+  transition: left 0.3s ease-out, right 0.3s ease-out;
+  background: #111123;
+}
+
+.boton:hover::before {
+  left: 0;
+  right: 0;
+}
+
+.boton:hover {
+  border-color: transparent;
+}
+
+/*-----------------menu url-------------------*/
+
+.menu-section {
+  margin-top: 3rem;
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  background: url(../img/ADAD-39-home.jpg) center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.menu-overlay {
+  background: rgba(160, 152, 152, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-content {
+  text-align: center;
+  color: black;
+  z-index: 1;
+  font-family: "Arial", sans-serif;
+  
+}
+
+.menu-content h1 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.menu-content p {
+  align-items: center;
+  width: 60%;
+  margin: 0 auto 20px; 
+ 
+  padding: 10px; 
+}
+
+
+@media (max-width: 768px) {
+  .menu-content h1 {
+    font-size: 2em;
+  }
+
+  .menu-content p {
+    font-size: 1em;
+  }
+
+  .boton {
+    font-size: 16px;
+    padding: 6px 30px;
+  }
+}
+
+/*-----------------Gallery-------------------*/
+
+.gallery{
+  display: flex;
+  padding: 1rem;
+  flex-wrap: wrap;
+
+}
+
+.gallery-column{
+  flex: 25%;
+  padding: 5px;
+}
+
+.gallery-column img{
+  width: 100%;
+  margin-top: 5px;
+}
+
+@media (max-width: 800px) {
+  .gallery-column{
+    flex: 50%;
+  }
+
+
+}
+
+@media (max-width: 600px) {
+  .gallery-column{
+    flex: 100%;
+  }
+  
+}
+  
+
+/*----------------Vireluxe-----------------*/
+.vireluxe-section {
+  margin-top: 3rem;
+}
+
+
+.vireluxe {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.vireluxe-left {
+  flex: 10;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.vireluxe-left-img {
+  width: 100%;
+  height: 60%;
+  background-image: url(../img/restaurante1jpg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.vireluxe-text-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.vireluxe-right {
+  flex: 7;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.seccion-boton {
+  margin-top: 2rem;
+}
+
+.vireluxe-right-img {
+  width: 100%;
+  height: 40%;
+  background-image: url(../img/3734043.jpg);
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+.vireluxe-text-right {
+  flex: 1;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .vireluxe {
+    flex-direction: column;
+  }
+}
+
+
+.reviews {
+  width: 100%;
+  height: 40vh;
+  background-color: #C2C0A9;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.review-container {
+  display: flex;
+  height: 100%;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.review-left,
+.review-right {
+  flex: 0 0 10%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: #000;
+}
+
+.review-left {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.review-right {
+  position: absolute;
+  right: 5%;
+  top: 70%;
+  transform: translateY(-50%);
+}
+
+.review {
+  display: flex;
+  flex: 2;
+  flex-flow: column nowrap;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.review h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.review p {
+  font-size: 1em;
+  font-style: italic;
+  color: #333;
+  max-width: 70%;
+}
+
+.slider_nav {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.slider_nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.slider_nav ul li {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.slider_nav ul li.active {
+  background-color: #333;
+}
+
+.reviews-title {
+  text-align: center;
+
+}
+
+.reviews-title h1 {
+
+  margin-bottom: 4rem;
+  font-weight: bold;
+}
+
+/*----------Footer-----------*/
+
+.general-footer{
+  margin-top: 6rem;
+  background-color: #111123;
+  color: #f7f6f3;
+  padding: 2rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Mulish", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.footer-social {
+  flex: 1;
+  margin: 1rem;
+}
+
+.footer-social h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  color: #f7f6f3;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #b5a089;
+}
+
+.footer-contact {
+  flex: 1;
+  margin: 1rem;
+}
+
+.footer-contact h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-contact a {
+  color: #b5a089;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+.footer-info {
+  flex: 1;
+  margin: 1rem;
+}
+
+.footer-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-info p {
+  margin: 0.2rem 0;
+
+}
+
+.general-footer p {
+  color: white;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #b5a089;
+  padding-top: 1rem;
+  border-top: 1px solid #b5a089;
+}
+
+/* Diseño adaptable */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-social,
+  .footer-contact,
+  .footer-info {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
