@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+
+}
+
+header{
+    height: 80px;
+    position: sticky;
+}
+
+nav{
+    width: 100%;
+    height: 100%;
+
+    ul {
+        list-style-type: none;
+    
+        width: 70%;
+
+        height: 100%;
+        border: 1px solid red;
+        margin-inline: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    ul li{
+        flex: 1;
+        height: 100%;
+        aspect-ratio: 4/3;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul li a{
+
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
+    }
+
+    
+}
+.hero{
+    width: 100%;
+    height:calc(100vh - 80px);
+    position: relative;
+  
+    margin-top: -80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+
+    .main-tag{
+        font-size: 4rem;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    p{
+        color: white;
+        width: 60%;
+        margin-inline: auto;
+        font-size: 1.2rem;
+    }
+
+    &::before{
+
+        background-image: url(./pexels-eberhardgross-673020.jpg);
+        background-position: center ;
+        background-size: cover;
+        background-repeat: no-repeat;
+        content: '';
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+
+        mask-image: url(./rb_8205.png);
+        mask-position: center;
+        mask-size: cover;
+        mask-repeat: no-repeat;
+        
+    }
+
+}
+
+button{
+    padding: .7rem 3rem;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 2rem;
+    color: white;
+}
+.main-btn{
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, .6);
+    color: black;
+}
+.second-btn{
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+
+
+    a {
+        position: absolute;
+        background-color: black;
+        color: white;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: 4rem;
+        bottom: 4rem;
+
+        cursor: pointer;
+
+        box-shadow: 1px 1px 5px black;
+
+        color: white;
+        text-decoration: none;
+        padding: 1rem;
+        font-size: .8rem;
+       
+    }

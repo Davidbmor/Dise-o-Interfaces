@@ -1,7 +1,6 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,17 +8,19 @@
 }
 
 
-:root{
+:root {
     --main-color: #23252E;
     --secondary-color: #a04b4b;
 }
-main{
+
+main {
     height: 100vh;
     width: 100%;
 
     background: url(../img/hero.webp) no-repeat center center/cover;
 }
-header{
+
+header {
     width: 100%;
     height: 8vh;
     background-color: rgba(0, 0, 0, 0.4);
@@ -31,29 +32,30 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    & .logo{
+
+    & .logo {
         width: 100px;
         max-height: 100%;
 
     }
 
-    & .logo img{
+    & .logo img {
         width: 100%;
         height: 100%;
     }
 
-    & nav{
+    & nav {
         flex: 5;
 
 
     }
 
-    
-    
+
+
 }
 
 
-.nav-bar{
+.nav-bar {
     list-style: none;
     display: flex;
     justify-content: flex-end;
@@ -61,21 +63,21 @@ header{
     padding-right: 2rem;
 }
 
-.nav-bar li{
+.nav-bar li {
     margin-left: 2rem;
 }
 
-.nav-bar li a{
+.nav-bar li a {
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
 }
 
-.tag-line{
+.tag-line {
     width: 40%;
 
     font-size: clamp(1.5rem, 0.667rem + 2.778vw, 4rem);
-   
+
 }
 
 .hero {
@@ -91,11 +93,11 @@ header{
 
     margin-top: -8vh;
 
-    padding-left: 4rem ;
+    padding-left: 4rem;
 }
 
 
-button{
+button {
     padding: .7rem 3rem;
     border-radius: 20px;
     border: none;
@@ -107,8 +109,8 @@ button{
     color: white;
 }
 
-.explore{
-    border:2px solid var(--main-color);
+.explore {
+    border: 2px solid var(--main-color);
     color: var(--main-color);
 }
 
@@ -124,7 +126,7 @@ button{
     overflow: hidden;
 }
 
-.subhero > * {
+.subhero>* {
     padding: 2rem;
 }
 
@@ -136,7 +138,7 @@ button{
 .ul-items {
     list-style-type: none;
     margin-top: 2rem;
-    
+
     & li {
         margin-top: 1.5rem;
     }
@@ -154,7 +156,8 @@ button{
     }
 }
 
-.blog-1, .blog-2 {
+.blog-1,
+.blog-2 {
     margin-top: 2rem;
     display: flex;
     align-items: stretch;
@@ -162,7 +165,8 @@ button{
     gap: 2rem;
 }
 
-.blog-1 img, .blog-2 img {
+.blog-1 img,
+.blog-2 img {
     flex: 1;
     object-fit: cover;
     object-position: center;
@@ -200,6 +204,8 @@ button{
         gap: 4rem;
 
     }
+
+    
 }
 
 @media screen and (max-width: 955px) {
@@ -207,7 +213,7 @@ button{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 2fr;
 
-        & > * {
+        &>* {
             grid-column: 1/3;
         }
 
@@ -216,13 +222,13 @@ button{
         }
     }
 
-    .our-blog > button{
+    .our-blog>button {
         margin-left: calc(100% - 3rem);
     }
 }
 
 
-h2{
+h2 {
     font-size: clamp(2rem, 1.333rem + 1.389vw, 3rem);
 }
 
@@ -230,7 +236,7 @@ h2{
 
 /*-----------------DISCOVER-----------------*/
 
-.discover{
+.discover {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -239,11 +245,12 @@ h2{
     gap: 4rem;
 }
 
-.discover-text, .discover-pic{
-    flex:1;
+.discover-text,
+.discover-pic {
+    flex: 1;
 }
 
-.discover-pic{
+.discover-pic {
     aspect-ratio: 1/1;
     background-image: url(https://www.recetassinlactosa.com/wp-content/uploads/2018/04/Pastel-tres-leches-YouTube.jpg);
     background-size: cover;
@@ -251,7 +258,7 @@ h2{
     background-repeat: no-repeat;
 }
 
-.discover-text{
+.discover-text {
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -262,39 +269,176 @@ h2{
 
 
 @media screen and(max-width: 500px) {
-    .discover{
+    .discover {
         padding: 2rem;
     }
 }
+
 @media screen and (max-width:1200px) {
-    .discover{
+    .discover {
         flex-direction: column;
     }
-    
+
 }
 
 
-.latest{
+.latest {
     text-align: center;
+    padding: 4rem;
+    position: relative;
 
-    & h4{
+    & h4 {
         margin: 2rem;
     }
 
     & p {
         margin: 2rem;
     }
-    & article{
+
+    & article {
         display: flex;
+        flex-flow: row wrap;
+        padding: 2rem;
+        gap: 2rem;
     }
 
-    & article > *{
+    & article > * {
         flex: 1;
-        border: 1px solid rebeccapurple;
 
-        & img{
+        & img {
             max-width: 100%;
-            aspect-ratio: 4/3;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
         }
     }
+}
+
+.news-body {
+    text-align: left;
+
+    & h3 {
+        font-size: 1.7rem;
+        margin-left: 2rem;
+    }
+    
+    & .category{
+        padding: .5rem 1rem;
+        margin-right: 2rem;
+    }
+
+    & i {
+        margin-right: 1rem;
+    }
+
+    & p {
+        margin: 2rem 0;
+    }
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .latest {
+        & article > * {
+            flex: 0 0 40%;
+        }
+
+        & article > *:last-child {
+            margin-top: 4rem;
+        }
+
+        & button.join{
+            position: absolute;
+            top: 65%;
+            left: 65%;
+        }
+    }
+    
+}
+
+
+
+@media screen and (max-width: 500px) {
+
+    .discover{
+        padding: 2rem;
+    }
+    .latest {
+        padding: 2rem;
+        
+        & button.join{
+            position: inherit;
+        }
+    }
+}
+
+
+.gallery {
+    text-align: center;
+    padding: 4rem;
+
+    & h4 {
+        margin: 2rem;
+    }
+
+    & p {        
+        margin: 2rem;
+    }
+}
+
+.cell {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cell1 {
+    background-image: url(../img/1.jpg);
+}
+.cell2 {
+    background-image: url(../img/2.jpg);
+}
+.cell3 {
+    background-image: url(../img/3.jpg);
+}
+.cell4 {
+    background-image: url(../img/4.jpg);
+}
+.cell5 {
+    background-image: url(../img/5.jpg);
+}
+.cell6 {
+    background-image: url(../img/6.jpg);
+}
+.cell7 {
+    background-image: url(../img/7.jpg);
+}
+.cell8 {
+    background-image: url(../img/8.jpg);
+}
+.cell9 {
+    background-image: url(../img/9.jpg);
+}
+.cell10 {
+    background-image: url(../img/10.jpg);
+}
+.cell11 {
+    background-image: url(../img/11.jpg);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows:  minmax(300px, 1fr);
+    
+
+    border: 1px solid red;
+}
+
+.cell-tall{
+    grid-row: span 2 / auto;
+}
+
+.cell-wide{
+    grid-column: span 2 / auto;
 }
